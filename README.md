@@ -1,6 +1,8 @@
 # CoCo-MILP: Inter-Variable Contrastive and Intra-Constraint Competitive MILP Solution Prediction
 This is the code of CoCo-MILP: Inter-Variable Contrastive and Intra-Constraint Competitive MILP Solution Prediction. Tianle Pu, Jianing Li, Yingying Gao, Shixuan Liu, Zijie Geng, Haoyang Liu, Chao Chen, Changjun Fan. AAAI 2026 Oral.
 
+Paper: [https://arxiv.org/abs/2511.09209](https://arxiv.org/abs/2511.09209)
+
 ## Dependencies
 
 - **Python**: 3.8.13
