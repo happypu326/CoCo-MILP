@@ -1,5 +1,5 @@
 # CoCo-MILP: Inter-Variable Contrastive and Intra-Constraint Competitive MILP Solution Prediction
-This is the code of CoCo-MILP: Inter-Variable Contrastive and Intra-Constraint Competitive MILP Solution Prediction. Tianle Pu, Jianing Li, Yingying Gao, Shixuan Liu, Zijie Geng, Haoyang Liu, Chao Chen, Changjun Fan. AAAI 2026 Oral.
+This is the code of **CoCo-MILP: Inter-Variable Contrastive and Intra-Constraint Competitive MILP Solution Prediction**. Tianle Pu, Jianing Li, Yingying Gao, Shixuan Liu, Zijie Geng, Haoyang Liu, Chao Chen, Changjun Fan. AAAI 2026 Oral.
 
 Paper: [https://arxiv.org/abs/2511.09209](https://arxiv.org/abs/2511.09209)
 
@@ -7,7 +7,6 @@ Paper: [https://arxiv.org/abs/2511.09209](https://arxiv.org/abs/2511.09209)
 
 - **Python**: 3.8.13
 - **Gurobi**: 11.0.3
-- **Hydra**: 1.3.2
 - **NetworkX**: 2.8.4
 
 To build the environment, use the provided Conda environment file:
@@ -42,7 +41,7 @@ The workflow of CoCo-MILP is as following.
 
 ### 1. Data generation
 
-We use [Ecole](https://www.ecole.ai/) library to generate Independent Set (IS) and Combinatorial Auction (CA) instance, and obtain the Balanced Item Placement (denoted by IP) and Workload Appointment (denoted by WA) instances from the ML4CO 2021 competition [generator](https://github.com/ds4dm/ml4co-competition-hidden). 
+We use [Ecole](https://www.ecole.ai/) library to generate Set Covering (SC) and Combinatorial Auction (CA) instance, and obtain the Balanced Item Placement (denoted by IP) and Workload Appointment (denoted by WA) instances from the ML4CO 2021 competition [generator](https://github.com/ds4dm/ml4co-competition-hidden). 
 
 For each benchmarks, we generate 300 instances for training and 100 instances for testing. We take SC for example, after generating the instances, place them in the `instance` directory following this structure: `instance/train/SC` and `instance/test/SC`.
 
@@ -66,7 +65,7 @@ python train.py --problem_type "SC" --device "cuda:0"
 
 ### 4. Test
 
-To evaluate the trained model,
+To evaluate the trained model, run: 
 
 ```bash
 python test.py --test_problem_type "SC" --num_workers 10 --device "cuda:0"
