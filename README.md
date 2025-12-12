@@ -41,7 +41,9 @@ The workflow of CoCo-MILP is as following.
 
 ### 1. Data generation
 
-We use [Ecole](https://www.ecole.ai/) library to generate Set Covering (SC) and Combinatorial Auction (CA) instance, and obtain the Balanced Item Placement (denoted by IP) and Workload Appointment (denoted by WA) instances from the ML4CO 2021 competition [generator](https://github.com/ds4dm/ml4co-competition-hidden). 
+We use [Ecole](https://www.ecole.ai/) library to generate Set Covering (SC) and Combinatorial Auction (CA) instance, and obtain the Balanced Item Placement (denoted by IP) and Workload Appointment (denoted by WA) instances from the ML4CO 2021 competition [generator](https://github.com/ds4dm/ml4co-competition-hidden). And you can download our data from Hugging Face:
+
+https://huggingface.co/datasets/tianle326/L2O-MILP
 
 For each benchmarks, we generate 300 instances for training and 100 instances for testing. We take SC for example, after generating the instances, place them in the `instance` directory following this structure: `instance/train/SC` and `instance/test/SC`.
 
