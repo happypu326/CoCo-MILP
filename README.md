@@ -3,6 +3,10 @@ This is the code of **CoCo-MILP: Inter-Variable Contrastive and Intra-Constraint
 
 Paper: [https://arxiv.org/abs/2511.09209](https://arxiv.org/abs/2511.09209)
 
+## Our Other Work
+
+**MILP‑X** is a unified framework that enables training and testing with just a few commands. It also inherits data generation code for various datasets, allowing users to generate data seamlessly. You can access it here: https://github.com/happypu326/MILP-X
+
 ## Dependencies
 
 - **Python**: 3.8.13
